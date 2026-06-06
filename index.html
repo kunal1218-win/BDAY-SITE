@@ -74,7 +74,7 @@ to{transform:translateY(110vh) rotate(360deg)}
 <body>
 
 <div id="page1" class="page">
-<h1>Hey Something Special For You☺️</h1>
+<h1>I Want to tell you something 😊</h1>
 <p style="margin-bottom:20px">A special surprise is waiting for you ✨</p>
 <button class="btn" onclick="openSurprise()">Open Surprise 🎁</button>
 </div>
@@ -102,7 +102,7 @@ Happy Birthday! ☺️🎂✨
 function makeHeart(){
  const h=document.createElement("div");
  h.className="heart";
- h.innerHTML="🍬🍫";
+ h.innerHTML="🍬","🍫";
  h.style.left=Math.random()*100+"vw";
  h.style.animationDuration=(4+Math.random()*5)+"s";
  document.body.appendChild(h);
@@ -113,7 +113,7 @@ setInterval(makeHeart,350);
 function makeConfetti(){
  const c=document.createElement("div");
  c.className="confetti";
- c.innerHTML=["🎉","✨","🎂","🍬🍫",][Math.floor(Math.random()*4)];
+ c.innerHTML=["✨","🎂","🍬","🍫",][Math.floor(Math.random()*4)];
  c.style.left=Math.random()*100+"vw";
  c.style.animationDuration=(3+Math.random()*4)+"s";
  document.body.appendChild(c);
